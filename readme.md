@@ -11,7 +11,7 @@ return view('users', ['users'=> $response->data]);
 
 ## Installation
 * Install package `composer require dorvidas\laravel-json-api-client`.
-* Add service provider `Dorvidas\JsonApiClient\Providers\JsonApiClientServiceProvider::class` to `config/app.php`
+* Add service provider `Dorvidas\JsonApiClient\Providers\JsonApiServiceProvider::class` to `config/app.php`
 * Publish vendor config `php artisan vendor:publish`.
 
 ## Usage

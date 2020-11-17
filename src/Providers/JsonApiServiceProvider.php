@@ -5,7 +5,7 @@ namespace Dorvidas\JsonApiClient\Providers;
 use Dorvidas\JsonApiClient\JsonApiClient;
 use Illuminate\Support\ServiceProvider;
 
-class JsonApiClientServiceProvider extends ServiceProvider
+class JsonApiServiceProvider extends ServiceProvider
 {
     public function boot()
     {
