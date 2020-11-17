@@ -1,12 +1,12 @@
 {
-    "name": "dorvidas/laravel-json-api-client",
+    "name": "jetcamp/laravel-json-api-client",
     "description": "Laravel client for easy access of data from {json:api} APIs",
     "type": "laravel-package",
     "license": "MIT",
     "authors": [
         {
-            "name": "Darius Orvidas",
-            "email": "dorvidas@gmail.com"
+            "name": "jetcamp",
+            "email": "roderik@jetcamp.com"
         }
     ],
     "require": {
