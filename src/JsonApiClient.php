@@ -1,12 +1,12 @@
 <?php
 
-namespace Dorvidas\JsonApiClient;
+namespace JetCamp\JsonApiClient;
 
 /**
  * Guzzle client wrapper for requesting resources from {json:api} APIs
  *
  * Class JsonApiClient
- * @package Dorvidas\JsonApiClient
+ * @package JetCamp\JsonApiClient
  */
 class JsonApiClient
 {

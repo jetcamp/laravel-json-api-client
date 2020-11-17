@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Dorvidas\\JsonApiClient\\": "src/"
+            "JetCamp\\JsonApiClient\\": "src/"
         }
     }
 }

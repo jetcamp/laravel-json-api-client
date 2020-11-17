@@ -10,15 +10,15 @@ return view('users', ['users'=> $response->data]);
 ```
 
 ## Installation
-* Install package `composer require dorvidas\laravel-json-api-client`.
-* Add service provider `Dorvidas\JsonApiClient\Providers\JsonApiServiceProvider::class` to `config/app.php`
+* Install package `composer require jetcamp\laravel-json-api-client`.
+* Add service provider `JetCamp\JsonApiClient\Providers\JsonApiServiceProvider::class` to `config/app.php`
 * Publish vendor config `php artisan vendor:publish`.
 
 ## Usage
 ### Getting the client
 You can get client in several ways:
-* Via Facade `\Dorvidas\JsonApiClient\Facades\JsonAPIClient`
-* Resolving from service container `Dorvidas\JsonApiClient\JsonApiClient::class`
+* Via Facade `\JetCamp\JsonApiClient\Facades\JsonAPIClient`
+* Resolving from service container `JetCamp\JsonApiClient\JsonApiClient::class`
 ### Making requests
 * get($endpoint)
 ```php

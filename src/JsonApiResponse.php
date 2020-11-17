@@ -1,11 +1,11 @@
 <?php
 
-namespace Dorvidas\JsonApiClient;
+namespace JetCamp\JsonApiClient;
 
 use WoohooLabs\Yang\JsonApi\Hydrator\ClassHydrator;
 use WoohooLabs\Yang\JsonApi\Request\JsonApiRequestBuilder;
 use WoohooLabs\Yang\JsonApi\Schema\Document;
-use Dorvidas\JsonApiClient\Exceptions\ApiValidationException;
+use JetCamp\JsonApiClient\Exceptions\ApiValidationException;
 
 class JsonApiResponse
 {

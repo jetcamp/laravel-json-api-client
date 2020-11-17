@@ -1,4 +1,4 @@
-<?php namespace Dorvidas\JsonApiClient\Facades;
+<?php namespace JetCamp\JsonApiClient\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Dorvidas\JsonApiClient\Providers;
+namespace JetCamp\JsonApiClient\Providers;
 
-use Dorvidas\JsonApiClient\JsonApiClient;
+use JetCamp\JsonApiClient\JsonApiClient;
 use Illuminate\Support\ServiceProvider;
 
 class JsonApiServiceProvider extends ServiceProvider
@@ -24,7 +24,7 @@ class JsonApiServiceProvider extends ServiceProvider
 
             $client = new \GuzzleHttp\Client($headers);
 
-            return new \Dorvidas\JsonApiClient\JsonApiClient(
+            return new \JetCamp\JsonApiClient\JsonApiClient(
                 $client,
                 session('jwt')
             );

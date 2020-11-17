@@ -1,6 +1,6 @@
 <?php
 
-namespace Dorvidas\JsonApiClient\Exceptions;
+namespace JetCamp\JsonApiClient\Exceptions;
 
 use Exception;
 
