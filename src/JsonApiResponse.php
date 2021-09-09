@@ -77,7 +77,7 @@ class JsonApiResponse
         if ($status == 422) {
             throw new ApiValidationException($errors);
         } elseif (substr($status, 0, 1) == 4) {
-            abort($status, 'API Client status code ' . $status);
+            abort($status, 'API Client status code ' . $status . ' ' . json_encode($errors));
         }
     }
 
