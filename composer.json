@@ -11,7 +11,8 @@
     ],
     "require": {
         "guzzlehttp/guzzle": "^7.0.1",
-        "woohoolabs/yin": "^3.0"
+        "woohoolabs/yin": "^4.3.0",
+        "woohoolabs/yang": "^3.0"
     },
     "autoload": {
         "psr-4": {
