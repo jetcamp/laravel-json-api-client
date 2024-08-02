@@ -2,8 +2,9 @@
 
 namespace JetCamp\JsonApiClient;
 
-use WoohooLabs\Yang\JsonApi\Hydrator\ClassHydrator;
+use WoohooLabs\Yang\JsonApi\Hydrator\ClassDocumentHydrator;
 use WoohooLabs\Yang\JsonApi\Request\JsonApiRequestBuilder;
+use WoohooLabs\Yang\JsonApi\Response\JsonApiResponse as Response;
 use WoohooLabs\Yang\JsonApi\Schema\Document;
 use JetCamp\JsonApiClient\Exceptions\ApiValidationException;
 
@@ -53,9 +54,9 @@ class JsonApiResponse
             if (empty($this->body['data'])) {
                 $this->data = collect([]);
             } else {
-                $document = Document::createFromArray($this->body);
-                $hydrator = new ClassHydrator();
-                $hydrated = $hydrator->hydrate($document);
+                $document = (new Response($this->response))->document();
+                $hydrator = new ClassDocumentHydrator();
+                $hydrated = $document->isSingleResourceDocument() ? $hydrator->hydrateSingleResource($document) : $hydrator->hydrate($document);
                 $this->data = is_array($hydrated) ? collect($hydrated) : $hydrated;
             }
         }
